@@ -28,7 +28,7 @@ app.get('/solutions/projects', (req, res) => {
 
 
 app.get('/solutions/projects/id-demo', (req, res) => {
-  projectData.getProjectById(1) 
+  projectData.getProjectById(999999999999999999999999999999999999999999999999999) 
     .then(item => res.send(item))
     .catch(err => res.status(404).send(String(err)));
 });
